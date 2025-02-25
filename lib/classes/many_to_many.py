@@ -150,7 +150,7 @@ class Magazine:
         if not magazine_articles:
             return None
         
-        return list(set([article.title for article in magazine_articles]))
+        return [article.title for article in magazine_articles]
 
 
     def contributing_authors(self):
